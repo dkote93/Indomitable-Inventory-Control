@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Indomitable_DatabaseDataSet" targetNamespace="http://tempuri.org/Indomitable_DatabaseDataSet.xsd" xmlns:mstns="http://tempuri.org/Indomitable_DatabaseDataSet.xsd" xmlns="http://tempuri.org/Indomitable_DatabaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="Indomitable_DatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Indomitable_DatabaseConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsApplication1.My.MySettings.GlobalReference.Default.Indomitable_DatabaseConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="product_tableTableAdapter" GeneratorDataComponentClassName="product_tableTableAdapter" Name="product_table" UserDataComponentName="product_tableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Indomitable_DatabaseConnectionString (MySettings)" DbObjectName="Indomitable_Database.product_table" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `ProductName` FROM `indomitable_database`.`product_table`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Indomitable_DatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Indomitable_DatabaseDataSet" msprop:Generator_UserDSName="Indomitable_DatabaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="product_table" msprop:Generator_TableClassName="product_tableDataTable" msprop:Generator_TableVarName="tableproduct_table" msprop:Generator_TablePropName="product_table" msprop:Generator_RowDeletingName="product_tableRowDeleting" msprop:Generator_RowChangingName="product_tableRowChanging" msprop:Generator_RowEvHandlerName="product_tableRowChangeEventHandler" msprop:Generator_RowDeletedName="product_tableRowDeleted" msprop:Generator_UserTableName="product_table" msprop:Generator_RowChangedName="product_tableRowChanged" msprop:Generator_RowEvArgName="product_tableRowChangeEvent" msprop:Generator_RowClassName="product_tableRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
